@@ -30,7 +30,10 @@ impl HalState {
     }
 }
 
-fn main_loop() {
+pub fn run() {
+    // simple_logger::init().unwrap();
+    // error!("Error");
+
     let event_loop = EventLoop::new();
     let window = WindowBuilder::new()
         .with_title("Shady")

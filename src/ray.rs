@@ -3,8 +3,6 @@ use std::num::ParseFloatError;
 use std::str::FromStr;
 
 fn run() {
-    // simple_logger::init().unwrap();
-    // error!("Error");
     // let options = Options::parse();
 }
 
