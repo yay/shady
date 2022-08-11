@@ -3,10 +3,10 @@ use minifb::{Key, Window, WindowOptions};
 pub fn run() {
     const WIDTH: usize = 600;
     const HEIGHT: usize = 600;
-    let mut buffer: Vec<u32> = vec![0; WIDTH * HEIGHT];
+    let mut buffer: Vec<u32> = std::vec::from_elem(0, WIDTH * HEIGHT);
 
     let mut window = Window::new(
-        "Test - ESC to exit",
+        "Software Fragment Shader Test - ESC to exit",
         WIDTH,
         HEIGHT,
         WindowOptions::default(),
